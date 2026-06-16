@@ -1,50 +1,52 @@
-# Welcome to your Expo app 👋
+# 🎬 Movie App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A beautiful and smooth movie discovery application built with **React Native** and **Expo**. This app fetches data from **The Movie Database (TMDB) API** to show the latest movies, search for movies, manage your favorite list, and even play movie trailers directly inside the app.
 
-## Get started
+## ✨ Features
 
-1. Install dependencies
+- **Discover Movies:** Browse through top-rated and trending movies on the home screen.
+- **Search:** Quickly search for any movie from the TMDB database.
+- **Favorites:** Save your favorite movies locally using `AsyncStorage` for quick access.
+- **Movie Details:** View detailed information including synopsis, rating, release date, cast, reviews, and similar movies.
+- **Trailer Integration:** Play YouTube movie trailers seamlessly on a dedicated screen without leaving the app.
+- **Stunning UI:** Features a dark-themed cinematic UI with blur effects (`expo-blur`) and smooth transitions.
 
-   ```bash
-   npm install
-   ```
+## 🛠 Tech Stack
 
-2. Start the app
+- **Framework:** React Native (Expo)
+- **Navigation:** React Navigation (Bottom Tabs & Stack)
+- **API:** TMDB (The Movie Database) via `axios`
+- **Video Player:** `react-native-youtube-iframe`
+- **Storage:** `@react-native-async-storage/async-storage`
 
-   ```bash
-   npx expo start
-   ```
+## 🚀 Getting Started
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+### 1. Install Dependencies
 
 ```bash
-npm run reset-project
+npm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 2. Environment Variables
 
-## Learn more
+Create a `.env` file in the root directory and add your TMDB API keys:
 
-To learn more about developing your project with Expo, look at the following resources:
+```env
+TMDB_API_KEY=your_api_key_here
+TMDB_ACCESS_TOKEN=your_access_token_here
+TMDB_BASE_URL=https://api.themoviedb.org/3
+TMDB_IMAGE_BASE_URL=https://image.tmdb.org/t/p/w500
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+> **Note:** You can get your free API key by registering at [TMDB Developer Settings](https://www.themoviedb.org/settings/api).
 
-## Join the community
+### 3. Run the App
 
-Join our community of developers creating universal apps.
+```bash
+npm start
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Press `a` to run on Android Emulator, `i` for iOS Simulator, or scan the QR code using the **Expo Go** app on your physical device.
+
+## 📱 Screenshots & Demo
+*(Add screenshots of your Home, Detail, and Trailer screens here)*
